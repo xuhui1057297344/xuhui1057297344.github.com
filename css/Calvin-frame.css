@@ -1,0 +1,48 @@
+/*****************全局设置************/
+div, span, p {
+	font: 14px "Microsoft Yahei";
+	text-align: center;
+}
+.calvin {/*背景色*/
+	background: #e2e2e2;
+}
+body a {
+    text-decoration: none;
+}
+/************上下页面部分设置***********/
+.head {
+	position: fixed;
+	width: 100%;
+	padding: 25px 0 5px 0;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #fff;
+	z-index: 99;
+}
+#pagetitle {
+	font-size: 20px;
+	color: #028dd0;
+}
+.tail {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid lightgray;
+	background-color: #fff;
+	z-index: 99;
+}
+.tail>.col-xs-3>.row {
+	/*下部分每一格撑大空间*/
+	padding: 5px;
+}
+.miniplayer {
+    border-top: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: -10px;
+}
+/***********内容页面设置*****************/
+.calvin .img_auto {
+	margin: 70px 0;
+	/*border: 1px solid black;*/
+    
+}

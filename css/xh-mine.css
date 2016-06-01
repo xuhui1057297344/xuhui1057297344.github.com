@@ -1,0 +1,42 @@
+.calvin .mine-header{
+	background-color: #028dd0;
+}
+.mine-header span{
+	font-size: 20px;
+	font-family:"微软雅黑";
+}
+.circle img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+.user{
+	font-size: 20px;
+	font-family:"微软雅黑";
+}
+.sign{
+	font-size: 14px;
+	font-family:"微软雅黑";
+}
+.calvin .mine-Total p{
+	font-size: 20px;
+	font-family:"微软雅黑";
+}
+.bell,.center{
+	border-right: 1px solid #ccc;
+}
+.bell,.center,.set{
+	border-bottom:1px solid #ccc;
+	height: 70px;
+	margin-top: 10px;
+}
+.mine-branch span{
+	font-size: 20px;
+	font-family:"微软雅黑";
+	margin-left: -200px; 
+}
+.mine-margin_border {
+	margin-top: 10px;
+	height:50px;
+	border-bottom: 1px solid #ccc;
+}

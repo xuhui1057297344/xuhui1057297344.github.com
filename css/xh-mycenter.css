@@ -1,0 +1,37 @@
+.mycenter-head,.circle,.focus{
+	background-color: #ccc;
+}
+.name{
+	font-size: 20px;
+	font-family:"微软雅黑";
+}
+.circle img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.focus{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.editor{
+	margin-bottom: 10px;
+}
+.personal{
+	height: 50px; 
+	background-color: #fff; 
+}
+.personal span{
+	font-size: 14px;
+}
+.dynamic{
+	background-color: #ccc;
+	border-top:2px solid #028dd0; 
+}
+#dynamic,#echo,#video{
+	background-color: #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

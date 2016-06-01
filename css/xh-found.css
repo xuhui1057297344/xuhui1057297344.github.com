@@ -1,0 +1,20 @@
+.calvin ,.found-frame{
+		background-color: #028dd0;
+}
+.found-frame{
+	margin-top: 80px;
+	background-color: #028dd0;
+	margin-bottom: 10px;
+}
+.form-group{
+	background-color: #028dd0;
+}
+.classify-frame{
+
+	margin-bottom: 10px;
+}
+.record li{
+    list-style: none;
+	text-align: left;
+	border-bottom: 1px solid #028dd0;
+}

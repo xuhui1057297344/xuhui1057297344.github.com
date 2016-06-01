@@ -1,0 +1,107 @@
+body{
+    background-color:#D5D5D5;
+}
+/*头部*/
+#player-pagetitle
+{
+	font-size: 20px;
+	color: #C8C8C8;
+}
+/*中间个人信息*/
+.player-message{
+	position: fixed;
+	margin-top: 61px;
+	width: 100%;
+	padding: 5px 0 5px 0;
+	background-color: #fff;
+    padding: 5px;
+	z-index: 99;
+}
+/*头像大小*/
+.player-headp{
+	width: 50px;/*固定大小感觉更好了。。。*/
+}
+/*作者和关注情况---------
+------------------------------位置*/
+.player-auther,.player-attention{
+	padding: 15px 20px 0 0;
+}
+.play-btn-attention-1{
+	padding: 8px 10px 0 0;
+}
+.play-btn-attention-2{
+	background-color: #028dd0;
+	border-radius: 10px;
+	color: #fff;
+}
+/*作者和关注情况---------
+------------------------------样式*/
+.player-auther-special{
+	font-size: 14px;
+	font-weight: bold;
+}
+.player-attention-green{
+	color: #8EBE88;
+}
+/*中间*/
+.player-middle{
+    margin-top: 150px;
+}
+.player-t-bgc{
+	background-color: #fff;
+}
+.player-m{
+	margin-top: 10px;
+/*	border: 1px solid #969696;*/
+	margin-left: -1px;
+	z-index: 99;
+    padding: 3px;
+}
+/*弹幕
+*/
+.player-danmu
+{
+   height: 100px;
+   position:absolute;
+   top:180px;
+   color: #fff;
+   animation:mymove 8s;
+   -webkit-animation:mymove 8s; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+from {right:0px;}
+to {right:500px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {right:0px;}
+to {right:500px;}
+}/*底部*/
+.player-tail{
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	z-index: 99;
+	border: 1px solid #D5D5D5;
+}
+/*player底部绿色的特效按钮*/
+.play-btn-special{
+	background-color: #028dd0;
+	border-radius: 10px;
+	color: #fff;
+}
+
+/*灰色图标颜色*/
+.fa-inverse-gray
+{
+	color:#C8C8C8;
+}
+.fa-inverse-icon-gray{
+	color:#969696;
+}
+.fa-inverse-icon-red{
+	color:#F77F7D;
+}
