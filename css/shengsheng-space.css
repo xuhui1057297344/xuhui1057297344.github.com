@@ -1,0 +1,37 @@
+body{
+    background-color: #e2e1e2;
+}
+.space-topimg{
+    background: url(../img/space5.jpg) 0 0 no-repeat;
+/*    background-color: rgba()*/
+    height: 250px;
+    margin-top: 25%;
+}
+
+/*
+.space-head{
+    height: 50px;
+    background-color: rgba(77,194,284,0.3); 
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+*/
+
+
+.space-content{
+    margin-top: 20px;
+    background-color: #fff;
+    height: 260px;
+    padding:20px 10px;
+}
+.space-content p{
+    text-indent: 2em;
+    line-height: 1.5em;
+    text-align: left;
+}
+.space-content span{
+    font-size: 16px;
+    color: deepskyblue;
+}

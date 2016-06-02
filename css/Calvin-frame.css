@@ -40,6 +40,9 @@ body a {
     padding: 5px;
     margin-bottom: -10px;
 }
+.miniplayer .music-title {
+    color: #01adff;
+}
 /***********内容页面设置*****************/
 .calvin .img_auto {
 	margin: 70px 0;

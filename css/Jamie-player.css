@@ -7,6 +7,15 @@ body{
 	font-size: 20px;
 	color: #C8C8C8;
 }
+.miniplayer {
+    border-top: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: -10px;
+}
+.miniplayer .music-title {
+    color: #01adff;
+}
 /*中间个人信息*/
 .player-message{
 	position: fixed;
@@ -59,8 +68,7 @@ body{
 }
 /*弹幕
 */
-.player-danmu
-{
+.player-danmu {
    height: 100px;
    position:absolute;
    top:180px;
@@ -79,14 +87,19 @@ to {right:500px;}
 {
 from {right:0px;}
 to {right:500px;}
-}/*底部*/
+}
+
+/*底部*/
 .player-tail{
 	position: fixed;
-	bottom: 10px;
+	bottom: -80px;
+    padding: 15px 0 0 0;
 	width: 100%;
-	z-index: 99;
+	z-index: 999;
 	border: 1px solid #D5D5D5;
+    background-color: #D5D5D5;
 }
+
 /*player底部绿色的特效按钮*/
 .play-btn-special{
 	background-color: #028dd0;
@@ -95,8 +108,7 @@ to {right:500px;}
 }
 
 /*灰色图标颜色*/
-.fa-inverse-gray
-{
+.fa-inverse-gray {
 	color:#C8C8C8;
 }
 .fa-inverse-icon-gray{
@@ -105,3 +117,44 @@ to {right:500px;}
 .fa-inverse-icon-red{
 	color:#F77F7D;
 }
+.Jplayer {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+}
+.invisible {
+    display: none;
+}
+
+/*TEST-page switch*/
+.pt-page-moveToLeft {
+                -webkit-animation: moveToLeft .6s ease both;
+                -moz-animation: moveToLeft .6s ease both;
+                animation: moveToLeft .6s ease both;
+            }
+            @-webkit-keyframes moveToLeft {
+                from{-webkit-transform:translateX(100%);}
+                to { -webkit-transform: translateX(0%); }
+            }
+            @-moz-keyframes moveToLeft {
+                from{-moz-transform:translateX(100%);}
+                to { -moz-transform: translateX(0%); }
+            }
+            @-o-keyframes moveToLeft{
+                from{-o-transform:translateX(100%);}
+                to(-o-transform:translateX(0%);}
+            }
+            @keyframes moveToLeft {
+                form{transform:translateX(100%);}
+                to { transform: translateX(0%); }
+            }
+
+/*
+@keyframes moveToRight {
+    form{transform: translate(0, 0);}
+    to{transform: translate(100%, 0);}
+}
+.pt-page-moveToRight {
+    animation: moveToRight .6s ease both;
+}
+*/

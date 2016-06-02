@@ -18,6 +18,43 @@ $(document).ready(function(){
     var $advice_btn = $(".calvin .music-advice .advice-btn"),
         $img_holders = $(".calvin .music-advice .img-holders"),
         $img_holder = $(".calvin .img-holders .img-holder");
+    
+    var $music_name = $(".miniplayer span.music-title"),
+        $music_stage = $(".miniplayer span.stage"),
+        music_name = "无正在播放";
+    $music_name.text(music_name);
+    /*点击图片播放音乐事件*/
+    var $music_img = $img_holder.children()//.row
+                                     .children("div.img").children(); //.img
+    
+    /*miniplayer的出现隐藏*/
+    var $miniplayer = $(".head .miniplayer"),
+        $icon_player = $("img.icon-player");
+    
+    $miniplayer.hide();
+    $icon_player.click(function() {
+        $miniplayer.slideToggle();
+    });
+    
+    /*播放/暂停切换*/
+    $miniplayer.children().eq(1).click(function() {
+        var icon_src = ["img/stop.png", "img/play.png"],
+            $icon_src = $miniplayer.children().eq(1).children().attr("src");
+        if($icon_src === icon_src[0])
+            $miniplayer.children().eq(1).children().attr("src", icon_src[1]);
+        else {
+            $miniplayer.children().eq(1).children().attr("src", icon_src[0]);
+            
+            /**********************页面切换**********************/
+            //window.location.href="Jamie-player.html";
+            $(".pt-page-moveToRight").removeClass("pt-page-moveToRight");
+            $(".invisible").addClass("pt-page-moveToLeft");
+            //$(".index").addClass("invisible");
+            $(".index").fadeOut(500);
+            $(".Jplayer").removeClass("invisible");
+        }
+    });
+    
     /*进行内容的随机更新*/
     $advice_btn.click(function() {
         $img_holders.fadeOut();
@@ -47,27 +84,23 @@ $(document).ready(function(){
         $img_holders.fadeIn("fast");
     });
     
-    /*点击图片播放音乐事件*/
-    var $music_img = $img_holder.children()//.row
-                                     .children("div.img").children(); //.img
+    /*更改播放曲目名称*/
     $music_img.click(function() {
-        alert($(this).parent().parent().parent().index());
-        window.location.href="Jamie-player.html";
+        $miniplayer.slideDown();
+        //alert($(this).parent().parent().parent().index());
+        music_name = $(this).parent().next().children().first().text();
+        //alert(music_name);
+        $music_name.text(music_name);
+        //window.location.href="Jamie-player.html";
     });
     
-    /*miniplayer的出现隐藏*/
-    var $miniplayer = $(".head .miniplayer"),
-        $icon_player = $("img.icon-player");
-    $miniplayer.hide();
-    $icon_player.click(function() {
-        $miniplayer.slideToggle();
-    });
-    $miniplayer.children().eq(1).click(function() {
-        var icon_src = ["img/stop.png", "img/play.png"],
-            $icon_src = $miniplayer.children().eq(1).children().attr("src");
-        if($icon_src === icon_src[0])
-            $miniplayer.children().eq(1).children().attr("src", icon_src[1]);
-        else
-            $miniplayer.children().eq(1).children().attr("src", icon_src[0]);
+    /*返回index*/
+    $(".Jamie-player .return").click(function() {
+        //alert();
+        $(".Jplayer").removeClass("pt-page-moveToLeft");
+        $(".Jplayer").addClass("pt-page-moveToRight");
+        $(".Jplayer").addClass("invisible");
+        //$(".index").removeClass("invisible");
+        $(".index").fadeIn();
     });
 });

@@ -1,0 +1,146 @@
+{
+  "xh-mine.html": {
+    "href": "xh-mine.html",
+    "resources": [
+      "js/jquery-1.12.3.min.js",
+      "js/Calvin-index.js",
+      "js/xh-mine.js",
+      "bootstrap-3.3.5-dist/css/bootstrap.min.css",
+      "css/xh-mine.css",
+      "css/Calvin-frame.css",
+      "img/bell.png",
+      "img/4.png",
+      "img/3.png",
+      "img/head.jpg",
+      "img/channel.ico",
+      "img/Power_Off.png",
+      "img/like.ico",
+      "img/user.png",
+      "img/us.ico",
+      "img/mymusic-active.png",
+      "img/missmusic.png",
+      "img/musicspace.png",
+      "img/foundmusic.png"
+    ],
+    "refer": [
+      "Calvin-index.html",
+      "shengsheng-space.html",
+      "xh-found.html"
+    ],
+    "priority": 0
+  },
+  "xh-found.html": {
+    "href": "xh-found.html",
+    "resources": [
+      "js/jquery-1.12.3.min.js",
+      "js/Calvin-index.js",
+      "css/Calvin-frame.css",
+      "css/xh-found.css",
+      "bootstrap-3.3.5-dist/css/bootstrap.min.css",
+      "img/missmusic.png",
+      "img/musicspace.png",
+      "img/foundmusic-active.png",
+      "img/mymusic.png"
+    ],
+    "refer": [
+      "Calvin-index.html",
+      "shengsheng-space.html",
+      "xh-found.html",
+      "xh-mine.html"
+    ],
+    "priority": 0
+  },
+  "shengsheng-space.html": {
+    "href": "shengsheng-space.html",
+    "resources": [
+      "bootstrap-3.3.5-dist/css/bootstrap.min.css",
+      "css/shengsheng-space.css",
+      "css/Calvin-frame.css",
+      "js/jquery-1.12.3.min.js",
+      "js/shengsheng-space.js",
+      "img/play.png",
+      "img/stop.png",
+      "img/space11.jpg",
+      "img/space2.jpg",
+      "img/space1.jpg",
+      "img/space9.jpg",
+      "img/space6.jpg",
+      "img/space8.jpg",
+      "img/space4.jpg",
+      "img/space3.jpg",
+      "img/player.png",
+      "img/left.png",
+      "img/right.png",
+      "img/musicspace-active.png",
+      "img/missmusic.png",
+      "img/foundmusic.png",
+      "img/mymusic.png"
+    ],
+    "refer": [
+      "Calvin-index.html",
+      "xh-found.html",
+      "xh-mine.html"
+    ],
+    "priority": 0
+  },
+  "Calvin-index.html": {
+    "href": "Calvin-index.html",
+    "resources": [
+      "js/jquery-1.12.3.min.js",
+      "js/Calvin-index.js",
+      "img/15.jpg",
+      "img/5.jpg",
+      "img/12.jpg",
+      "img/10.jpg",
+      "img/14.jpg",
+      "img/11.jpg",
+      "img/8.jpg",
+      "img/4.jpg",
+      "img/7.jpg",
+      "img/13.jpg",
+      "img/play.png",
+      "img/9.jpg",
+      "img/3.jpg",
+      "img/stop.png",
+      "img/1.jpg",
+      "img/6.jpg",
+      "img/2.jpg",
+      "js/Calvin-index-autoimg.js",
+      "bootstrap-3.3.5-dist/css/bootstrap.min.css",
+      "css/Calvin-frame.css",
+      "css/Calvin-index.css",
+      "css/Jamie-player.css",
+      "img/player.png",
+      "img/left.png",
+      "img/right.png",
+      "img/player-headPortrait.jpg",
+      "img/player-middlePicture.gif",
+      "img/missmusic-active.png",
+      "img/musicspace.png",
+      "img/foundmusic.png",
+      "img/mymusic.png"
+    ],
+    "refer": [
+      "shengsheng-space.html",
+      "xh-found.html",
+      "xh-mine.html"
+    ],
+    "priority": 0
+  },
+  "shengsheng-signin.html": {
+    "href": "shengsheng-signin.html",
+    "resources": [
+      "js/jquery-1.12.3.min.js",
+      "js/shengsheng-signin.js",
+      "js/shengsheng-main.js",
+      "bootstrap-3.3.5-dist/css/bootstrap.min.css",
+      "css/shengsheng-signin.css",
+      "css/shengsheng-style.css",
+      "img/missmusic-signin.png"
+    ],
+    "refer": [
+      "Calvin-index.html"
+    ],
+    "priority": 0
+  }
+}
