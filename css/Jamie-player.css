@@ -4,22 +4,17 @@ body{
 /*头部*/
 #player-pagetitle
 {
-	font-size: 20px;
+	font-size: 15px;
 	color: #C8C8C8;
 }
-.miniplayer {
-    border-top: 1px solid lightgray;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: -10px;
+#player-musictitle {
+    font-size: 12px;
 }
-.miniplayer .music-title {
-    color: #01adff;
-}
+
 /*中间个人信息*/
-.player-message{
+.player-message {
 	position: fixed;
-	margin-top: 61px;
+	margin-top: 80px;
 	width: 100%;
 	padding: 5px 0 5px 0;
 	background-color: #fff;

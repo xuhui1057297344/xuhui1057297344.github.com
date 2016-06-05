@@ -35,3 +35,11 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.dynamic {
+    padding-bottom: 10px;;
+}
+.signout {
+    margin-top: 20px;
+    background-color: #f84242;
+    color: white;
+}

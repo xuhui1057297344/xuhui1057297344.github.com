@@ -1,4 +1,7 @@
 /***************享悦页面***************/
+audio {
+    /*display: none;*/
+}
 /*照片轮换*/
 #img_show img {
     display:none;
