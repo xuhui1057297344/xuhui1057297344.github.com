@@ -64,12 +64,20 @@ body{
 /*弹幕
 */
 .player-danmu {
-   height: 100px;
+   height: 280px;
    position:absolute;
-   top:180px;
-   color: #fff;
-   animation:mymove 8s;
-   -webkit-animation:mymove 8s; /*Safari and Chrome*/
+    right: 0;
+    padding: 10px;
+   color: #000;
+   
+}
+.danmu {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0 10px;
+    animation:mymove 4s;
+   -webkit-animation:mymove 4s;
 }
 
 @keyframes mymove
@@ -92,7 +100,7 @@ to {right:500px;}
 	width: 100%;
 	z-index: 999;
 	border: 1px solid #D5D5D5;
-    background-color: #D5D5D5;
+    background-color: rgb(255, 255, 255);
 }
 
 /*player底部绿色的特效按钮*/
@@ -121,7 +129,7 @@ to {right:500px;}
     display: none;
 }
 
-/*TEST-page switch*/
+/*page switch*/
 .pt-page-moveToLeft {
                 -webkit-animation: moveToLeft .6s ease both;
                 -moz-animation: moveToLeft .6s ease both;
@@ -144,12 +152,4 @@ to {right:500px;}
                 to { transform: translateX(0%); }
             }
 
-/*
-@keyframes moveToRight {
-    form{transform: translate(0, 0);}
-    to{transform: translate(100%, 0);}
-}
-.pt-page-moveToRight {
-    animation: moveToRight .6s ease both;
-}
-*/
+

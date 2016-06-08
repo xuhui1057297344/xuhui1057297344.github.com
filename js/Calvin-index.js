@@ -25,7 +25,33 @@ var detail_inf = [
                  "music/7.mp3",
                  "music/8.mp3"
                 ];
-
+var danmus = [
+                    "啊，挺好的哈",
+                    "开口脆系列",
+                    "你看不到我看不到我",
+                    "谁的弹幕停的越久越帅啊是嘛",
+                    "谁的弹幕停的越久越帅啊是嘛",
+                    "谁的弹幕停的越久越帅啊是嘛",
+                    "冯嘉辉是我男神!!!冯嘉辉是我男神!!!",
+                    "冯嘉辉是我男神!!!冯嘉辉是我男神!!!",
+                    "冯嘉辉是我男神!!!冯嘉辉是我男神!!!",
+                    "冯嘉辉是我男神!!!冯嘉辉是我男神!!!",
+                    "LZ收好我的膝盖 ",
+                    "居然 ...居然是你唱的",
+                    "诶哟，不错哟！",
+                    "真的别说了，这app真给力！",
+                    "诶哟，不错哟！",
+                    "男神我要给你生孩子！！！！",
+                    "路转粉啊，",
+                    "从此爱上了享悦爱屁屁！！！",
+                    "从此爱上了享悦爱屁屁！！！",
+                    "我是程序猿！！我昨天做到凌晨!!!",
+                    "前面的，，等等我啊",
+                    "前面的，，等等我啊",
+                    "6666666",
+                    "听说这个APP会很火？？",
+                    "好像我的弹幕挺久的嘛"
+                 ];
 $(document).ready(function(){
     var audio = document.createElement("audio");
     var $advice_btn = $(".calvin .music-advice .advice-btn"),
@@ -35,6 +61,7 @@ $(document).ready(function(){
     var $music_name = $(".miniplayer span.music-title"),
         $music_stage = $(".miniplayer span.stage"),
         music_name = "无正在播放";
+    var t;
     $music_name.text(music_name);
     
     var $music_img = $img_holder.children()//.row
@@ -72,6 +99,24 @@ $(document).ready(function(){
             
             /*音乐播放*/
             audio.play();
+            
+    var $danmu = $(".player-danmu p"),
+        myDate = new Date(),
+        time = myDate.getTime()/1000; //获取当前时间(从1970.1.1开始的毫秒数)
+    var i = 1;
+   show_danmu(); 
+    function show_danmu() {
+        var rand_d = Math.floor(Math.random()*danmus.length),
+        rand_p = Math.floor(Math.random()*8);
+        if($danmu.eq(rand_p).hasClass("pt-page-moveToLeft")){
+            $danmu.eq(rand_p).html(danmus[rand_d])
+                .removeClass("invisible").removeClass("pt-page-moveToLeft").addClass("danmu");
+        }
+        else {
+            $danmu.eq(rand_p).addClass("pt-page-moveToLeft");
+        }
+        t = setTimeout(show_danmu,1000*0.8);
+    }
         }
     });
     
@@ -129,6 +174,8 @@ $(document).ready(function(){
         $(".Jplayer").addClass("invisible");
         //$(".index").removeClass("invisible");
         $(".index").fadeIn();
+        
+        clearTimeout(t);
     });
     
     /*关注按钮*/
